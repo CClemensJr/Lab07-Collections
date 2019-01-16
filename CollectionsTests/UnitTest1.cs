@@ -4,12 +4,60 @@ using Collections.Classes;
 
 namespace CollectionsTests
 {
-    public class UnitTest1
+    public class CardTests
     {
         [Fact]
-        public void Test1()
+        public void ShouldCreateACard()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldGetCardDetails()
         {
 
         }
     }
+
+
+    public class DeckTests
+    {
+        [Fact]
+        public void ShouldCreateADeck()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldAddCardsToDeck()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldSubtractCardsFromDeck()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldSubtractCardFromDeckIfExists()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldNotSubtractCardFromDeckIfNotExists()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldGetNumberCardsInADeck()
+        {
+
+        }
+
+    }
+
 }
