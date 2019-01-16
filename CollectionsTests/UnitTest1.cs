@@ -13,7 +13,25 @@ namespace CollectionsTests
         }
 
         [Fact]
-        public void ShouldGetCardDetails()
+        public void ShouldHaveSuite()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldNotHaveInvalidSuite()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldHaveFace()
+        {
+
+        }
+
+        [Fact]
+        public void ShouldNotHaveInvalidFace()
         {
 
         }
