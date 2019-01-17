@@ -31,9 +31,16 @@ namespace CollectionsTests
     public class DeckTests
     {
         [Fact]
-        public void ShouldCreateADeck()
+        public void AddCardToDeck_DeckNotEmpty()
         {
+            Card card = new Card();
+            card.Suite = "Spades";
+            card.Face = "King";
 
+            Deck<Card> deck = new Deck<Card>;
+            Deck.Add(card);
+
+            Assert.NotEmpty(deck);
         }
 
         [Fact]
