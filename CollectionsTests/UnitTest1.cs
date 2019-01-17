@@ -7,11 +7,12 @@ namespace CollectionsTests
     public class CardTests
     {
         [Fact]
-        public void ShouldCreateACard()
+        public void SetCardSuiteProperty_ReturnsSuiteProperty()
         {
             Card card = new Card();
+            card.Suite = _Suite.Spades;
 
-            Assert.NotNull(card);
+            Assert.Equals(Spades, card.Suite);
         }
 
         [Fact]
