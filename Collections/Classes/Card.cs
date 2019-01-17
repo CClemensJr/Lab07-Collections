@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Collections.Classes
 {
-    class Card
+    public class Card
     {
         //public enum Suite { Spades, Clubs, Hearts, Diamonds }
 
