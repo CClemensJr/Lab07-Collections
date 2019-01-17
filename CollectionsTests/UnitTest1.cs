@@ -44,15 +44,18 @@ namespace CollectionsTests
         }
 
         [Fact]
-        public void ShouldAddCardsToDeck()
+        public void RemoveExistingCardFromDeck_DeckLengthDecreasesByOne()
         {
+            Card card = new Card();
+            card.Suite = "Spades";
+            card.Face = "King";
 
-        }
+            Deck<Card> deck = new Deck<Card>();
+            deck.Add(card);
 
-        [Fact]
-        public void ShouldSubtractCardsFromDeck()
-        {
+            deck.Remove(card);
 
+            Assert.Empty(deck);
         }
 
         [Fact]
