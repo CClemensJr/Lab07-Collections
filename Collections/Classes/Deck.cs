@@ -21,5 +21,14 @@ namespace Collections.Classes
 
             currentIndex++;
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < currentIndex; i++)
+            {
+                yield return deckItems[i];
+            }
+        }
+
     }
 }
