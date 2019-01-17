@@ -23,6 +23,12 @@ namespace Collections.Classes
             currentIndex++;
         }
 
+        public void Remove(T item)
+        {
+            //deckItems[currentIndex]
+
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < currentIndex; i++)

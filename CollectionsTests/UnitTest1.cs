@@ -44,7 +44,7 @@ namespace CollectionsTests
         }
 
         [Fact]
-        public void RemoveExistingCardFromDeck_DeckLengthDecreasesByOne()
+        public void RemoveExistingCardFromDeck_DeckIsEmpty()
         {
             Card card = new Card();
             card.Suite = "Spades";
@@ -59,21 +59,18 @@ namespace CollectionsTests
         }
 
         [Fact]
-        public void ShouldSubtractCardFromDeckIfExists()
+        public void RemoveNonExistingCardFromDeck_DeckIsEmpty()
         {
+            Card card = new Card();
+            card.Suite = "Spades";
+            card.Face = "King";
 
-        }
+            Deck<Card> deck = new Deck<Card>();
+            deck.Add(card);
 
-        [Fact]
-        public void ShouldNotSubtractCardFromDeckIfNotExists()
-        {
+            deck.Remove(card);
 
-        }
-
-        [Fact]
-        public void ShouldGetNumberCardsInADeck()
-        {
-
+            Assert.NotEmpty(deck);
         }
 
     }
