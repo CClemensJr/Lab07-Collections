@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Collections.Classes
 {
-    public class Deck
+    public class Deck<T> : IEnumerable<T>
     {
     }
 }

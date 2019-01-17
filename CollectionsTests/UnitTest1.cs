@@ -37,7 +37,7 @@ namespace CollectionsTests
             card.Suite = "Spades";
             card.Face = "King";
 
-            Deck<Card> deck = new Deck<Card>;
+            Deck<Card> deck = new Deck<Card>();
             Deck.Add(card);
 
             Assert.NotEmpty(deck);
