@@ -9,7 +9,9 @@ namespace CollectionsTests
         [Fact]
         public void ShouldCreateACard()
         {
+            Card card = new Card();
 
+            Assert.NotNull(card);
         }
 
         [Fact]
