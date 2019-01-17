@@ -10,33 +10,20 @@ namespace CollectionsTests
         public void SetCardSuiteProperty_ReturnsSuiteProperty()
         {
             Card card = new Card();
-            card.Suite = _Suite.Spades;
 
-            Assert.Equals(Spades, card.Suite);
+            card.Suite = "Spades";
+
+            Assert.Equal("Spades", card.Suite);
         }
 
         [Fact]
-        public void ShouldHaveSuite()
+        public void SetCardFaceProperty_ReturnsFaceProperty()
         {
+            Card card = new Card();
 
-        }
+            card.Face = "King";
 
-        [Fact]
-        public void ShouldNotHaveInvalidSuite()
-        {
-
-        }
-
-        [Fact]
-        public void ShouldHaveFace()
-        {
-
-        }
-
-        [Fact]
-        public void ShouldNotHaveInvalidFace()
-        {
-
+            Assert.Equal("King", card.Face);
         }
     }
 
